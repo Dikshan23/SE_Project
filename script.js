@@ -29,7 +29,7 @@ form.addEventListener("submit", (e) => {
   const age = document.getElementById("age").value.trim();
   const grade = document.getElementById("grade").value.trim();
 
-if (!name || !age || !grade) return alert("Fields cannot be empty (Edit Branch)");
+if (!name || !age || !grade) return alert("Fields cannot be empty (Main Branch)");
 
 
 
