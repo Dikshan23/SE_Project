@@ -29,7 +29,8 @@ form.addEventListener("submit", (e) => {
   const age = document.getElementById("age").value.trim();
   const grade = document.getElementById("grade").value.trim();
 
-  if (!name || !age || !grade) return alert("Please fill all fields!");
+  if (!name || !age || !grade) return alert("All fields are required (Edit Branch)");
+
 
   if (editIndex === null) {
     // Add new student
