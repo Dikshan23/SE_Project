@@ -29,18 +29,15 @@ form.addEventListener("submit", (e) => {
   const age = document.getElementById("age").value.trim();
   const grade = document.getElementById("grade").value.trim();
 
-<<<<<<< HEAD
-if (!name || !age || !grade) return alert("Fields cannot be empty (Main Branch)");
-=======
-  if (!name || !age || !grade) return alert("All fields are required (Edit Branch)");
->>>>>>> edit-feature
+if (!name || !age || !grade) return alert("Fields cannot be empty (Edit Branch)");
+
 
 
   if (editIndex === null) {
     // Add new student
     students.push({ name, age, grade });
   } else {
-    // Update existing student
+    // Update existing studentgit add script.js
     students[editIndex] = { name, age, grade };
     editIndex = null;
     submitBtn.textContent = "Add Student";
